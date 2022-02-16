@@ -9,3 +9,4 @@ I am using [SvelteKit](https://kit.svelte.dev/) as a static website generator.
 ## Credits
 
 [Code icon](https://www.flaticon.com/free-icons/code) created by Freepik - Flaticon
+CSS reset based on [Josh W. Comeau's custom CSS reset](https://www.joshwcomeau.com/css/custom-css-reset/)
