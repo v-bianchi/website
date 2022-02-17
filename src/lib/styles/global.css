@@ -36,12 +36,13 @@ body {
   background-color: var(--color-background);
   color: var(--color-foreground);
 
-  line-height: calc(1em + 0.5rem);
+  line-height: 1.5;
   font-family: var(--font-family-default);
   -webkit-font-smoothing: antialiased;
 
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 img, picture, video, canvas, svg {
@@ -58,7 +59,18 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  font-size: 2rem;
+  line-height: 1.2;
   margin-bottom: 4rem;
+  width: fit-content;
+  background: linear-gradient(
+    135deg,
+    var(--color-accent-secondary),
+    var(--color-accent-secondary-alt)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 h2 {
