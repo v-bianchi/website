@@ -49,4 +49,18 @@
     margin-right: auto;
   }
 
+  @media screen and (max-width: 512px) {
+    ul {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    li:first-child {
+      margin-right: unset;
+    }
+
+    a {
+      padding: .75rem;
+    }
+  }
 </style>
