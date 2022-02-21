@@ -1,5 +1,5 @@
 <script>
-  export let posts;
+  export let sortedPosts;
 </script>
 
 <h1>Blog</h1>
@@ -7,11 +7,11 @@
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem molestias amet cumque.</p>
 
 <ul>
-  {#each posts as post}
+  {#each sortedPosts as post}
     <li>
-      <a href={`/blog/${post.slug}`}>
-        <p>{post.title}</p>
-        <p>{post.tagline}</p>
+      <a href={post.path}>
+        <p>{post.meta.title}</p>
+        <p>{post.meta.tagline}</p>
       </a>
     </li>
   {:else}

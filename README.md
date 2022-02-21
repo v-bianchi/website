@@ -4,7 +4,7 @@ This is the source code of my website, which contains my dev blog, my résumé, 
 
 ## Tech
 
-I am using [SvelteKit](https://kit.svelte.dev/) as a static website generator.
+I am using [SvelteKit](https://kit.svelte.dev/) as a static website generator and [mdsvex](https://mdsvex.com/) to be able to write blog posts in markdown format.
 
 ## Credits
 
