@@ -24,19 +24,20 @@
 <style>
   #skip-to-main {
     position: absolute;
-    padding: 1rem;
+    padding: var(--spacer-m);
     top: -100%;
-    left: 0.5rem;
+    left: var(--spacer-s);
     background-color: var(--color-background);
     font-size: 1.25rem;
   }
 
   #skip-to-main:focus {
-    top: 0.5rem;
+    top: var(--spacer-s);
   }
   main {
     max-width: 40rem;
-    margin: 0 auto;
-    padding: 1rem;
+    padding: 0 var(--spacer-m);
+    flex-grow: 1;
+    align-self: center;
   }
 </style>

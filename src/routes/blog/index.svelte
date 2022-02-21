@@ -42,6 +42,6 @@
   }
 
   li:not(:last-of-type) {
-    margin-bottom: 2rem;
+    margin-bottom: var(--spacer-l);
   }
 </style>

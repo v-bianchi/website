@@ -20,7 +20,8 @@
 
 <style>
   header {
-    padding: 1rem;
+    margin-bottom: var(--spacer-xl);
+    padding: var(--spacer-m);
     background-color: var(--color-background-alt);
   }
 
@@ -29,20 +30,19 @@
     padding: 0;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: var(--spacer-m);
   }
 
   a {
     font-size: 1.125rem;
     font-weight: bold;
     color: var(--color-foreground);
-    padding: 0.5rem 0;
+    padding: var(--spacer-s) 0;
     text-decoration: none;
     transition: color 0.1s ease-in;
   }
 
-  a:hover,
-  a:focus-visible {
+  a:hover {
     color: var(--color-accent-primary);
   }
 
@@ -55,7 +55,7 @@
   @media screen and (max-width: 512px) {
     ul {
       flex-direction: column;
-      gap: 2rem;
+      gap: var(--spacer-l);
     }
 
     li:first-child {

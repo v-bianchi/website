@@ -48,17 +48,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: var(--spacer-m);
+    margin-top: var(--spacer-xl);
     background-color: var(--color-background-alt);
   }
 
   a {
     color: var(--color-foreground);
-    transition: color 0.1s ease-in;
+    transition: color 0.15s ease-in;
   }
 
-  a:hover,
-  a:focus {
+  a:hover {
     color: var(--color-accent-primary);
   }
 
@@ -67,22 +67,24 @@
     list-style-type: none;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: var(--spacer-m);
   }
 
   svg {
     fill: currentColor;
-    width: 2rem;
+    width: var(--spacer-l);
   }
 
   @media screen and (max-width: 512px) {
     footer {
       flex-direction: column;
-      gap: 2rem;
+      gap: var(--spacer-l);
     }
 
     ul {
-      gap: 3rem;
+      gap: unset;
+      width: 100%;
+      justify-content: space-around;
     }
 
     svg {

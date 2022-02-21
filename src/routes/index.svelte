@@ -22,12 +22,12 @@
 
   h1 > span {
     color: initial;
-    margin-left: 0.5rem;
+    margin-left: var(--spacer-s);
   }
 
   p:first-of-type {
     font-size: 2rem;
     line-height: 1.2;
-    margin-bottom: 2rem;
+    margin-bottom: var(--spacer-l);
   }
 </style>
