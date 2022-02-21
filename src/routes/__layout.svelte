@@ -11,6 +11,8 @@
   import '$lib/styles/global.css'
 </script>
 
+<a href="#main" id="skip-to-main">Skip to main content</a>
+
 <Header />
 
 <main id="main">
@@ -20,6 +22,18 @@
 <Footer />
 
 <style>
+  #skip-to-main {
+    position: absolute;
+    padding: 1rem;
+    top: -100%;
+    left: .5rem;
+    background-color: var(--color-background);
+    font-size: 1.25rem;
+  }
+
+  #skip-to-main:focus {
+    top: .5rem;
+  }
   main {
     max-width: 40rem;
     margin: 0 auto;
