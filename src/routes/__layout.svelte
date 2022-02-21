@@ -1,3 +1,10 @@
+<svelte:head>
+  <title>Victor Bianchi | Software developer</title>
+  <meta name="author" content="Victor Bianchi">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Victor Bianchi | Software developer">
+</svelte:head>
+
 <script>
   import Header from '$lib/components/Header.svelte';
   import Footer from '$lib/components/Footer.svelte';
@@ -6,7 +13,7 @@
 
 <Header />
 
-<main>
+<main id="main">
   <slot></slot>
 </main>
 

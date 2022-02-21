@@ -1,3 +1,8 @@
+<svelte:head>
+  <meta name="description" content="This is my home page!">
+  <meta property="og:description" content="I'm a software developer, teacher, and cybersecurity student based in Montreal 🇨🇦. Welcome to my website!">
+</svelte:head>
+
 <h1>Hi, I'm Victor<span>👋</span></h1>
 
 <p>I'm a software developer, teacher, and cybersecurity student based in Montreal 🇨🇦</p>
