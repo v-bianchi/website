@@ -3,7 +3,9 @@
     <ul>
       <li>
         <a href="/">
-          <span aria-hidden="true">&lt;</span>Victor&nbsp;Bianchi<span aria-hidden="true">&gt;</span>
+          <span aria-hidden="true">&lt;</span>
+          Victor&nbsp;Bianchi
+          <span aria-hidden="true">&gt;</span>
         </a>
       </li>
       <li>
@@ -34,12 +36,13 @@
     font-size: 1.125rem;
     font-weight: bold;
     color: var(--color-foreground);
-    padding: .5rem 0;
+    padding: 0.5rem 0;
     text-decoration: none;
-    transition: color .1s ease-in;
+    transition: color 0.1s ease-in;
   }
-  
-  a:hover, a:focus-visible {
+
+  a:hover,
+  a:focus-visible {
     color: var(--color-accent-primary);
   }
 
@@ -60,7 +63,7 @@
     }
 
     a {
-      padding: .75rem;
+      padding: 0.75rem;
     }
   }
 </style>

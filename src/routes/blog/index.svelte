@@ -1,13 +1,13 @@
-<svelte:head>
-  <title>Victor Bianchi | Software developer | Blog</title>
-  <meta name="description" content="This is my blog!">
-  <meta property="og:title" content="Blog">
-  <meta property="og:description" content="This is my blog!">
-</svelte:head>
-
 <script>
   export let sortedPosts;
 </script>
+
+<svelte:head>
+  <title>Victor Bianchi | Software developer | Blog</title>
+  <meta name="description" content="This is my blog!" />
+  <meta property="og:title" content="Blog" />
+  <meta property="og:description" content="This is my blog!" />
+</svelte:head>
 
 <h1>Blog</h1>
 

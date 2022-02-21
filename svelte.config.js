@@ -3,20 +3,20 @@ import { mdsvex } from 'mdsvex';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	kit: {
-		adapter: adapter(),
-	},
+  kit: {
+    adapter: adapter(),
+  },
 
-	extensions: ['.svelte', '.md'],
+  extensions: ['.svelte', '.md'],
 
-	preprocess: [
-		mdsvex({
-			extensions: ['.md'],
-			layout: {
+  preprocess: [
+    mdsvex({
+      extensions: ['.md'],
+      layout: {
         blog: 'src/routes/blog/_post.svelte',
       },
-		}),
-	],
+    }),
+  ],
 };
 
 export default config;
