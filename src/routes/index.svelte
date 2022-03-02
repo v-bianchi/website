@@ -16,10 +16,6 @@
 </p>
 
 <style>
-  h1 {
-    font-size: 4rem;
-  }
-
   h1 > span {
     color: initial;
     margin-left: var(--spacer-s);

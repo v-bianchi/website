@@ -1,4 +1,6 @@
 <script>
+  import '$lib/styles/blog-post.css';
+
   export let title;
   export let tagline;
   export let published;
@@ -13,11 +15,44 @@
   <meta property="og:description" content={tagline} />
 </svelte:head>
 
-<h1>{title}</h1>
-<p>{tagline}</p>
-<p><small>published at {published}</small></p>
-{#if updated}
-  <p><small>updated at {updated}</small></p>
-{/if}
+<article>
+  <h1>{title}</h1>
+  {#if tagline}
+    <p class="tagline">{tagline}</p>
+  {/if}
+  <div class="metadata">
+    {#if published}
+      <p><span>published at: </span>{published}</p>
+    {/if}
+    {#if updated}
+      <p><span>updated at: </span>{updated}</p>
+    {/if}
+  </div>
+  
+  <slot />
+</article>
 
-<slot />
+<style>
+  .tagline {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+  .metadata {
+    width: fit-content;
+    border-top: 2px solid currentColor;
+    padding-top: var(--spacer-s);
+    margin-bottom: var(--spacer-xl);
+  }
+
+  .metadata p {
+    font-size: 0.75rem;
+  }
+
+  .metadata span {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  h1 {
+    margin-bottom: var(--spacer-m);
+  }
+</style>
