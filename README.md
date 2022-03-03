@@ -6,6 +6,12 @@ This is the source code of my website, which contains my dev blog, my résumé, 
 
 I am using [SvelteKit](https://kit.svelte.dev/) as a static website generator and [mdsvex](https://mdsvex.com/) to be able to write blog posts in markdown format.
 
+### External services
+
+The website's content (blog posts, project info) is stored on a separate repository.
+
+Images are stored on [Cloudinary](https://cloudinary.com/) and converted to `webp` format at different dimensions for optimized image delivery.
+
 ## Credits
 
 [Code icon](https://www.flaticon.com/free-icons/code) created by Freepik - Flaticon
