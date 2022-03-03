@@ -28,7 +28,7 @@
       <p><span>updated at: </span>{updated}</p>
     {/if}
   </div>
-  
+
   <slot />
 </article>
 

@@ -4,7 +4,7 @@
   --color-background-alt: #44475a;
 
   --color-foreground: #f8f8f2;
-  --color-foreground-faded: #6272a4;
+  --color-foreground-faded: #a3acc9;
 
   --color-accent-primary: #ff79c6;
 
@@ -26,6 +26,7 @@
   --spacer-m: 1rem;
   --spacer-l: 2rem;
   --spacer-xl: 4rem;
+  --spacer-xxl: 8rem;
 }
 
 *,

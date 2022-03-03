@@ -9,8 +9,4 @@
     line-height: 1.4;
     padding: var(--spacer-m);
   }
-  
-  div:not(:last-child) {
-    margin-bottom: var(--spacer-m);
-  }
 </style>
