@@ -36,12 +36,14 @@
   .tagline {
     font-size: 1.5rem;
     line-height: 1.2;
+    margin-bottom: var(--spacer-s);
   }
   .metadata {
     width: fit-content;
-    border-top: 2px solid currentColor;
+    border-top: 2px solid var(--color-foreground);
     padding-top: var(--spacer-s);
     margin-bottom: var(--spacer-xl);
+    color: var(--color-foreground-faded);
   }
 
   .metadata p {

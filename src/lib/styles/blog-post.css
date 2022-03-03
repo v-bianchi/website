@@ -123,3 +123,10 @@ pre[class*='language-'] {
 .token.entity {
   cursor: help;
 }
+
+/* Media queries */
+@media screen and (max-width: 512px) {
+  article h2 {
+    margin-top: var(--spacer-xl);
+  }
+}
