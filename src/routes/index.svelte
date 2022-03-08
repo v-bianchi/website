@@ -19,6 +19,7 @@
   h1 > span {
     color: initial;
     margin-left: var(--spacer-s);
+    line-height: 1.4;
   }
 
   p:first-of-type {
