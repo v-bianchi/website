@@ -16,7 +16,7 @@
 
 {#if status.toString()[0] === '4'}
   <p>Not found</p>
-  <img src={notFound} alt="">
+  <img src={notFound} alt="" />
 {:else if status.toString()[0] === '5'}
   <p>Internal server error</p>
 {/if}

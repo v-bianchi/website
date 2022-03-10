@@ -14,6 +14,9 @@
       <li>
         <a href="/projects">Projects</a>
       </li>
+      <li>
+        <a href="/cv">Résumé</a>
+      </li>
     </ul>
   </nav>
 </header>

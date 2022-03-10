@@ -35,7 +35,8 @@
     top: var(--spacer-s);
   }
   main {
-    max-width: 40rem;
+    width: 100%;
+    max-width: 80ch;
     padding: 0 var(--spacer-m);
     flex-grow: 1;
     align-self: center;

@@ -1,0 +1,177 @@
+<script>
+  import CvListItem from '$lib/components/CvListItem.svelte';
+  import logoLg2 from '$lib/images/logo_lg2.jpeg';
+  import logoPoly from '$lib/images/logo_polymtl.jpeg';
+  import logoSpockee from '$lib/images/logo_spockee.jpeg';
+  import logoSurmesur from '$lib/images/logo_surmesur.jpeg';
+  import logoWagon from '$lib/images/logo_wagon.jpeg';
+</script>
+
+<h1>
+  Victor Bianchi
+  <span>Software developer</span>
+</h1>
+
+<section>
+  <ul class="profile-links">
+    <li>
+      <a href="https://victorbianchi.dev" target="_blank" rel="noopener noreferrer nofollow">
+        <svg role="img" width="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+          <title>My website</title>
+          <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)">
+            <path
+              d="M4621.5,5012.4c-446.6-46-797.3-116.9-1159.6-237.7C1984.1,4289.9,822.6,3128.4,337.7,1650.6C161.4,1115.8,98.1,709.5,100,107.7c0-488.8,34.5-780.1,139.9-1197.9c168.7-665.1,515.6-1351.3,950.7-1887.9c176.3-218.5,525.2-563.5,741.8-736c529-421.7,1203.7-757.1,1855.3-923.8c417.8-105.4,709.2-139.9,1197.9-139.9c460-1.9,609.5,11.5,1021.6,95.8c703.4,139.9,1485.4,511.7,2064.3,979.4c233.8,189.7,575,530.9,760.9,762.8c415.9,519.4,753.3,1201.8,916.2,1849.6c425.5,1690.5-59.4,3446.2-1286.1,4674.8c-759,759-1686.7,1222.9-2777.3,1391.5C5491.7,5004.8,4790.2,5029.7,4621.5,5012.4z M4650.2,3222.3v-941.1l-99.7,11.5c-322,38.3-546.3,72.8-732.2,115c-243.4,55.6-529,139.9-529,157.2c0,24.9,182.1,348.8,285.6,504.1c235.8,358.4,584.6,739.8,893.2,975.6c84.3,63.3,159.1,116.9,168.7,116.9C4644.5,4161.4,4650.2,3737.9,4650.2,3222.3z M5503.2,4061.8c306.7-228.1,672.7-628.7,914.3-994.8c101.6-153.3,283.7-477.3,283.7-502.2c0-17.3-285.6-101.6-529-157.2c-185.9-42.2-410.2-76.7-730.3-115l-101.6-11.5v941.1c0,515.6,5.7,939.2,15.3,939.2C5363.3,4161.4,5430.3,4115.4,5503.2,4061.8z M3423.6,4019.6c0-3.8-57.5-74.8-126.5-157.2c-159.1-191.7-373.8-513.7-523.2-782c-63.2-116.9-118.8-218.5-122.7-230c-7.7-23-168.7,65.2-392.9,212.8c-187.9,124.6-193.6,97.7,82.4,322c287.5,231.9,621,438.9,923.8,575C3425.5,4031.1,3423.6,4031.1,3423.6,4019.6z M6881.3,3881.6c260.7-130.3,580.8-339.2,810.8-530.9c95.8-80.5,180.2-153.3,185.9-164.8c7.7-9.6-59.4-65.2-145.7-122.7c-230-149.5-385.2-235.8-392.9-212.8c-3.8,11.5-59.4,113.1-122.7,230c-149.5,270.3-331.6,542.4-492.6,739.8c-170.6,208.9-172.5,210.8-105.4,185.9C6647.4,3994.7,6766.3,3939.1,6881.3,3881.6z M1790.6,2543.8c82.4-55.6,243.4-157.2,358.4-224.3c116.9-65.2,214.7-122.7,218.5-124.6c3.8-3.8-28.8-128.4-70.9-279.8c-105.4-366.1-168.7-693.8-207-1040.8c-15.3-157.2-34.5-316.3-38.3-348.8l-9.6-63.2h-621c-561.6,0-622.9,3.8-622.9,30.7c0,17.2,13.4,122.7,30.7,235.7c76.7,527.1,247.3,1019.7,509.8,1475.8c115,199.3,277.9,442.8,297.1,442.8C1641.1,2647.3,1710.1,2601.3,1790.6,2543.8z M8479.8,2480.5c293.2-437,481.1-860.6,605.7-1357c42.2-172.5,107.3-550.1,107.3-630.6c0-26.8-61.3-30.7-622.9-30.7h-622.9l-7.7,44.1c-5.8,23-13.4,115-21.1,205.1c-24.9,362.3-107.3,795.4-235.7,1243.9c-38.3,136.1-59.4,241.5-47.9,245.3c42.2,15.3,477.2,281.7,584.6,360.3c65.2,47.9,124.6,86.3,134.2,86.3C8360.9,2647.3,8418.4,2572.5,8479.8,2480.5z M3638.2,1738.8c212.7-49.8,628.7-113.1,883.6-136.1l128.4-13.4v-563.5V462.2h-956.4h-956.4l7.7,72.8c47.9,475.3,107.3,816.5,201.3,1148.1c32.6,113.1,63.2,212.7,67.1,218.5c3.8,7.7,97.8-15.3,208.9-51.8C3331.6,1815.4,3519.4,1765.6,3638.2,1738.8z M7044.2,1679.3c103.5-373.8,193.6-891.3,193.6-1123.2v-93.9H6289h-948.8v563.5v563.5l130.3,13.4c458.1,42.2,941.1,134.2,1291.8,247.3c109.3,34.5,203.2,57.5,208.9,51.8C6979,1895.9,7011.6,1796.3,7044.2,1679.3z M2051.2-308.3c5.8-46,15.3-141.8,21.1-216.6c32.6-404.4,143.8-943,285.6-1381.9c11.5-36.4-5.7-51.8-136.1-122.7c-122.7-67.1-404.4-247.2-561.6-360.3c-30.7-23-42.2-11.5-118.8,95.8c-285.6,402.5-517.5,912.3-634.4,1395.3C862.9-716.5,797.7-337,797.7-258.4c0,26.8,61.3,30.7,621,30.7h622.9L2051.2-308.3z M4646.4-787.4l-5.7-561.6l-182.1-13.4c-377.6-28.8-806.9-111.2-1217.1-235.8c-120.7-36.4-222.3-67.1-228.1-67.1c-3.8,0-32.6,92-65.2,207c-76.7,262.6-149.5,628.7-176.3,885.5c-11.5,111.2-23,233.8-26.8,274.1l-7.7,70.9h956.4h956.4L4646.4-787.4z M7245.4-298.7c-3.8-40.2-15.3-162.9-26.8-274.1c-26.8-251.1-99.7-619.1-174.4-881.7c-32.6-109.2-61.3-203.2-63.3-207c-3.8-1.9-107.3,24.9-230,61.3c-412.1,126.5-839.5,208.9-1219,237.7l-182.1,13.4l-5.7,561.6l-3.8,559.7h956.4h956.4L7245.4-298.7z M9192.8-258.4c0-80.5-65.2-458.1-107.3-630.6c-124.6-496.4-312.4-920-605.7-1357c-74.7-113.1-120.8-162.9-136.1-153.3c-13.4,9.6-116.9,78.6-233.8,157.2c-115,76.7-274.1,174.4-348.8,216.6c-76.7,42.2-139.9,78.6-139.9,82.4s21.1,74.8,47.9,157.2c107.3,343.1,201.2,803.1,239.6,1184.5c11.5,116.9,24.9,247.3,30.7,293.2l9.6,80.5h622.9C9131.4-227.8,9192.8-231.6,9192.8-258.4z M4650.2-2997.4c0-521.3-5.7-948.8-11.5-948.8c-36.4,0-337.3,251.1-527.1,440.8c-230,228.1-379.5,414-559.7,690c-139.9,218.5-287.5,492.6-268.3,504.1c28.8,17.3,419.7,126.5,563.5,157.2c214.7,47.9,590.3,101.6,703.4,103.5l99.7,1.9V-2997.4z M5708.3-2079.3c118.8-15.3,299-46,398.7-67.1c174.4-38.3,569.3-145.7,599.9-164.8c19.2-11.5-130.3-291.3-281.8-523.3c-254.9-389.1-590.3-757.1-916.2-1002.4c-80.5-59.4-151.4-109.2-157.2-109.2c-5.8,0-11.5,427.4-11.5,948.8v948.7h76.7C5457.2-2048.6,5589.4-2062,5708.3-2079.3z M2743.2-2805.7c134.2-251.1,366.1-603.7,532.8-810.8c70.9-86.3,118.8-157.2,107.3-157.2c-51.7,0-509.8,247.3-726.4,392.9c-228.1,153.3-555.8,415.9-555.8,446.6c1.9,24.9,479.2,329.7,519.4,329.7C2628.2-2604.5,2683.7-2694.5,2743.2-2805.7z M7536.8-2696.4c220.4-134.2,352.7-222.3,352.7-237.7c0-28.7-325.8-291.3-544.3-438.9c-205.1-138-690-400.6-739.8-400.6c-11.5,0,36.4,69,105.4,153.3c168.7,207,360.3,498.3,517.5,782c70.9,128.4,134.2,233.8,141.8,233.8C7379.6-2604.5,7452.4-2646.6,7536.8-2696.4z"
+            />
+          </g>
+        </svg>
+        victorbianchi.dev
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/v-bianchi" target="_blank" rel="noopener noreferrer nofollow">
+        <svg role="img" width="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <title>GitHub</title>
+          <path
+            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+          />
+        </svg>
+        github.com/v-bianchi
+      </a>
+    </li>
+    <li>
+      <a href="mailto:hello@victorbianchi.dev" target="_blank" rel="noopener noreferrer nofollow">
+        <svg role="img" width="40" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <title>Email</title>
+          <path
+            d="M425.367,72.125H86.633C38.752,72.125,0,111.131,0,158.759v194.482    c0,47.839,38.98,86.633,86.633,86.633h338.734c47.741,0,86.633-38.888,86.633-86.633V158.759    C512,111.069,473.187,72.125,425.367,72.125z M425.367,110.411c9.804,0,18.928,2.942,26.556,7.976l-184.231,120.58    c-7.102,4.649-16.282,4.649-23.386,0l-184.23-120.58C76.732,107.394,58.236,110.411,425.367,110.411z M39.03,150.368    l126.776,82.975L38.286,350.222C38.286,142.169,37.967,156.414,39.03,150.368z M425.367,401.589H86.633    c-12.865,0-24.563-5.061-33.235-13.284l145.463-133.326c59.59,39.003,66.629,31.186,114.278,0l145.463,133.326    C449.931,396.528,438.232,401.589,425.367,401.589z M473.716,350.222l-127.52-116.879l126.776-82.975    C474.035,156.414,473.716,142.206,473.716,350.222z"
+          />
+        </svg>
+        hello@victorbianchi.dev
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://linkedin.com/in/vbianchi/"
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+      >
+        <svg role="img" width="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <title>LinkedIn</title>
+          <path
+            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+          />
+        </svg>
+        linkedin.com/in/vbianchi
+      </a>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2>Relevant work experience</h2>
+  <ul>
+    <CvListItem
+      heading="Spockee"
+      title="Frontend developer"
+      startTime="2021-02"
+      endTime="2021-12"
+      description="Helped bring a live video shopping solution from MVP to stable product. Fixed bugs and developed new features for their video chat JS plugin that clients integrated on their online store frontends. Started working on an SDK to make client onboarding and integration easier."
+      bottomText="Tech stack: ES6, React, React Native, Effector, Webpack, NodeJS, Koa, Socket.io, PostgreSQL, Terraform, AWS"
+      image={logoSpockee}
+      linkUrl="https://spockee.com"
+    />
+    <CvListItem
+      heading="LG2"
+      title="Frontend developer"
+      startTime="2020-02"
+      endTime="2021-01"
+      description="Worked on landing pages, e-commerce websites, and mobile apps for several clients. Learned to use their internally-developed, poorly-documented frontend library that hydrate static pages with JS component logic."
+      bottomText="Tech stack: ES6, Typescript, React, React Native, Sass, internal JS libraries, MobX, Craft CMS"
+      image={logoLg2}
+      linkUrl="https://lg2.com"
+    />
+    <CvListItem
+      heading="MTM Design (previously Surmesur)"
+      title="Full stack developer"
+      startTime="2019-04"
+      endTime="2019-10"
+      description="Fixed bugs and implemented new features on their e-commerce platform for fully customizable, made-to-measure clothing"
+      bottomText="Tech stack: Ruby, Rails, Sass, jQuery, mySQL"
+      image={logoSurmesur}
+      linkUrl="https://www.mtm.design/"
+    />
+    <CvListItem
+      heading="Le Wagon coding bootcamp"
+      title="Teacher"
+      startTime="2018-03"
+      endTime="2019-05"
+      description="Started as a teaching assistant, then became a lecturer for the coding school I previously attended as a student. A typical day consists of giving a lecture at the morning, helping the students finish several code exercises throughout the day, and animating a live-coding session at 5pm. During the last 3 weeks of the course, we coach the students on designing, building, and deploying a web app from scratch."
+      image={logoWagon}
+      linkUrl="https://www.lewagon.com/"
+    />
+  </ul>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <ul>
+    <CvListItem
+      heading="Polytechnique Montréal"
+      title="Undergraduate microprogram in Networking and Security"
+      startTime="2022-01"
+      endTime="2022-05"
+      description="Courses taken: Introduction to Cybersecurity, Attack and Defense Methods in the Workplace, Server Security."
+      image={logoPoly}
+      linkUrl="https://www.polymtl.ca/programmes/en/programmes/undergraduate-microprogram-networking-and-security"
+    />
+    <CvListItem
+      heading="Le Wagon coding bootcamp"
+      title="Full stack web development bootcamp certificate"
+      startTime="2018-01"
+      endTime="2018-03"
+      description="9-week intensive course covering HTML, CSS, Bootstrap, JavaScript ES2015, SQL, git, GitHub, Heroku and Ruby on Rails."
+      image={logoWagon}
+      linkUrl="https://www.lewagon.com/web-development-course/full-time"
+    />
+  </ul>
+</section>
+
+<style>
+  h1 {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: var(--spacer-l);
+  }
+
+  h1 span {
+    display: block;
+    font-size: 1.5rem;
+    margin-top: var(--spacer-s);
+    color: var(--color-foreground);
+  }
+
+  h2 {
+    margin: var(--spacer-xl) 0 var(--spacer-l);
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: var(--spacer-m);
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  svg {
+    width: 1.5rem;
+    fill: var(--color-foreground);
+  }
+
+  .profile-links a {
+    display: flex;
+    align-items: center;
+    gap: var(--spacer-m);
+    color: var(--color-foreground);
+    width: fit-content;
+  }
+</style>
