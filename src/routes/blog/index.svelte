@@ -11,15 +11,15 @@
 
 <h1>Blog</h1>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem molestias amet cumque.</p>
+<p>These are a few articles I wrote.</p>
 
 <ul>
   {#each sortedPosts as post}
     <li>
       <a href={post.path}>
-        <p>{post.meta.title}</p>
-        <p>{post.meta.tagline}</p>
+        <h2>{post.meta.title}</h2>
       </a>
+      <p>{post.meta.tagline}</p>
     </li>
   {:else}
     <p>No blog posts yet. Stay tuned!</p>
@@ -27,21 +27,25 @@
 </ul>
 
 <style>
-  a {
-    text-decoration: none;
+  ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacer-m);
   }
-  a p {
-    margin-bottom: 0;
+
+  li {
+    padding: var(--spacer-m);
+    background-color: var(--color-background-alt);
+    border-radius: var(--spacer-s);
+  }
+
+  h2 {
+    margin-bottom: var(--spacer-s);
+  }
+  a,
+  a h2 {
     color: var(--color-foreground);
-  }
-
-  a p:first-of-type {
-    font-size: 2em;
-    line-height: 1.25;
-    font-weight: bold;
-  }
-
-  li:not(:last-of-type) {
-    margin-bottom: var(--spacer-l);
   }
 </style>
