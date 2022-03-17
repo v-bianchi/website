@@ -13,7 +13,7 @@
 </h1>
 
 <section>
-  <ul class="profile-links">
+  <ul class="icon-links">
     <li>
       <a href="https://victorbianchi.dev" target="_blank" rel="noopener noreferrer nofollow">
         <svg role="img" width="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
@@ -68,6 +68,12 @@
 </section>
 
 <section>
+  <h2>About me</h2>
+  <p>Curious and fast-learning programmer, previously worked on very diverse fields ranging from photography to automobile mechanics. After shifting careers to web development, I spent some time teaching at a code bootcamp around the world.</p>
+  <p>I decided to begin studying cybersecurity at Polytechnique Montréal not only to fulfill a personal interest in ethical hacking, but also to help tech companies strengthen their security.</p>
+</section>
+
+<section>
   <h2>Relevant work experience</h2>
   <ul>
     <CvListItem
@@ -75,7 +81,7 @@
       title="Frontend developer"
       startTime="2021-02"
       endTime="2021-12"
-      description="Helped bring a live video shopping solution from MVP to stable product. Fixed bugs and developed new features for their video chat JS plugin that clients integrated on their online store frontends. Started working on an SDK to make client onboarding and integration easier."
+      description="Helped bring a live video shopping solution from MVP to stable product. Fixed bugs and developed new features for their video chat JS plugin that clients integrate on their store frontends. Started working on an SDK to make client onboarding and integration easier. This was my first contact with the AWS cloud, managing assets on S3 buckets and Cloudfront distributions."
       bottomText="Tech stack: ES6, React, React Native, Effector, Webpack, NodeJS, Koa, Socket.io, PostgreSQL, Terraform, AWS"
       image={logoSpockee}
       linkUrl="https://spockee.com"
@@ -95,7 +101,7 @@
       title="Full stack developer"
       startTime="2019-04"
       endTime="2019-10"
-      description="Fixed bugs and implemented new features on their e-commerce platform for fully customizable, made-to-measure clothing"
+      description="Fixed bugs and implemented new features on their e-commerce platform for fully customizable, made-to-measure clothing. As a team, we had a strong code review process and followed TDD practices."
       bottomText="Tech stack: Ruby, Rails, Sass, jQuery, mySQL"
       image={logoSurmesur}
       linkUrl="https://www.mtm.design/"
@@ -109,6 +115,46 @@
       image={logoWagon}
       linkUrl="https://www.lewagon.com/"
     />
+  </ul>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <h3>Frontend</h3>
+  <ul class="pill-list">
+    <li>HTML5</li>
+    <li>CSS3</li>
+    <li>Sass</li>
+    <li>Accessibility</li>
+    <li>Javascript</li>
+    <li>Typescript</li>
+    <li>React</li>
+    <li>Svelte</li>
+    <li>React Native</li>
+    <li>Redux</li>
+    <li>Effector</li>
+  </ul>
+  <h3>Backend</h3>
+  <ul class="pill-list">
+    <li>Ruby</li>
+    <li>Rails</li>
+    <li>Node.js</li>
+    <li>PostgreSQL</li>
+    <li>MongoDB</li>
+  </ul>
+  <h3>Operations and infrastructure</h3>
+  <ul class="pill-list">
+    <li>CI/CD</li>
+    <li>AWS</li>
+    <li>Docker</li>
+    <li>Linux</li>
+    <li>Bash scripting</li>
+  </ul>
+  <h3>Cybersecurity</h3>
+  <ul class="pill-list">
+    <li>Vulnerability scanning</li>
+    <li>Metasploit</li>
+    <li>Server hardening</li>
   </ul>
 </section>
 
@@ -134,6 +180,22 @@
       linkUrl="https://www.lewagon.com/web-development-course/full-time"
     />
   </ul>
+</section>
+
+<section>
+  <h2>Human languages</h2>
+  <ul class="pill-list">
+    <li>English</li>
+    <li>French</li>
+    <li>Spanish</li>
+    <li>Italian</li>
+    <li>Portuguese</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Certifications</h2>
+  <p>Coming soon: LPI Linux Essentials, AWS Certified Cloud Practitioner</p>
 </section>
 
 <style>
@@ -167,11 +229,27 @@
     fill: var(--color-foreground);
   }
 
-  .profile-links a {
+  .icon-links a {
     display: flex;
     align-items: center;
     gap: var(--spacer-m);
     color: var(--color-foreground);
     width: fit-content;
+    font-size: 1.125rem;
+  }
+
+  .pill-list {
+    flex-direction: row;
+    gap: var(--spacer-s);
+    flex-wrap: wrap;
+    margin-bottom: var(--spacer-m);
+  }
+
+  .pill-list > li {
+    background-color: var(--color-foreground);
+    color: var(--color-background);
+    padding: 0.25rem 0.75rem;
+    border-radius: 999rem;
+    font-weight: bold;
   }
 </style>
