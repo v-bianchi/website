@@ -2,10 +2,11 @@ export const get = async () => {
   const allPostFiles = import.meta.glob('/src/routes/blog/**/!(_)*.md');
   const iterablePostFiles = Object.entries(allPostFiles);
 
-  if (!iterablePostFiles || iterablePostFiles.length === 0)
+  if (!iterablePostFiles) {
     return {
       status: 404,
     };
+  }
 
   const allPosts = await Promise.all(
     iterablePostFiles.map(async ([path, resolver]) => {

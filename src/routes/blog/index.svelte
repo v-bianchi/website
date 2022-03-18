@@ -11,8 +11,6 @@
 
 <h1>Blog</h1>
 
-<p>These are a few articles I wrote.</p>
-
 <ul>
   {#each sortedPosts as post}
     <li>
@@ -22,7 +20,7 @@
       <p>{post.meta.tagline}</p>
     </li>
   {:else}
-    <p>No blog posts yet. Stay tuned!</p>
+    <p>Nothing to see here yet. Stay tuned!</p>
   {/each}
 </ul>
 
