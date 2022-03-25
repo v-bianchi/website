@@ -7,12 +7,10 @@
   import logoWagon from '$lib/images/logo_wagon.jpeg';
 </script>
 
-<h1>
-  Victor Bianchi
-  <span>Software developer</span>
-</h1>
+<h1>Victor Bianchi</h1>
+<p>Software developer</p>
 
-<section>
+<section id="links">
   <ul class="icon-links">
     <li>
       <a href="https://victorbianchi.dev" target="_blank" rel="noopener noreferrer nofollow">
@@ -67,13 +65,20 @@
   </ul>
 </section>
 
-<section>
+<section id="about">
   <h2>About me</h2>
-  <p>Curious and fast-learning programmer, previously worked on very diverse fields ranging from photography to automobile mechanics. After shifting careers to web development, I spent some time teaching at a code bootcamp around the world.</p>
-  <p>I decided to begin studying cybersecurity at Polytechnique Montréal not only to fulfill a personal interest in ethical hacking, but also to help tech companies strengthen their security.</p>
+  <p>
+    Curious and fast-learning programmer, previously worked on very diverse fields ranging from
+    photography to automobile mechanics. After shifting careers to web development, I spent some
+    time teaching at a code bootcamp around the world.
+  </p>
+  <p>
+    I decided to begin studying cybersecurity at Polytechnique Montréal not only to fulfill a
+    personal interest in ethical hacking, but also to help tech companies strengthen their security.
+  </p>
 </section>
 
-<section>
+<section id="work">
   <h2>Relevant work experience</h2>
   <ul>
     <CvListItem
@@ -91,7 +96,7 @@
       title="Frontend developer"
       startTime="2020-02"
       endTime="2021-01"
-      description="Worked on landing pages, e-commerce websites, and mobile apps for several clients. Learned to use their internally-developed, poorly-documented frontend library that hydrate static pages with JS component logic."
+      description="Worked on landing pages, e-commerce websites, and mobile apps for several clients. Learned to use their internally developed JS library that hydrates server-rendered HTML with component logic."
       bottomText="Tech stack: ES6, Typescript, React, React Native, Sass, internal JS libraries, MobX, Craft CMS"
       image={logoLg2}
       linkUrl="https://lg2.com"
@@ -118,7 +123,7 @@
   </ul>
 </section>
 
-<section>
+<section id="skills">
   <h2>Skills</h2>
   <h3>Frontend</h3>
   <ul class="pill-list">
@@ -148,17 +153,21 @@
     <li>AWS</li>
     <li>Docker</li>
     <li>Linux</li>
-    <li>Bash scripting</li>
+    <li>Shell scripting</li>
+    <li>Terraform</li>
+    <li>Vagrant</li>
   </ul>
-  <h3>Cybersecurity</h3>
+  <h3>Networking and security</h3>
   <ul class="pill-list">
     <li>Vulnerability scanning</li>
+    <li>CIS benchmark server hardening</li>
     <li>Metasploit</li>
-    <li>Server hardening</li>
+    <li>Wireshark</li>
+    <li>Snort</li>
   </ul>
 </section>
 
-<section>
+<section id="education">
   <h2>Education</h2>
   <ul>
     <CvListItem
@@ -182,7 +191,7 @@
   </ul>
 </section>
 
-<section>
+<section id="languages">
   <h2>Human languages</h2>
   <ul class="pill-list">
     <li>English</li>
@@ -193,7 +202,7 @@
   </ul>
 </section>
 
-<section>
+<section id="certifications">
   <h2>Certifications</h2>
   <p>Coming soon: LPI Linux Essentials, AWS Certified Cloud Practitioner</p>
 </section>
@@ -202,13 +211,13 @@
   h1 {
     font-size: 3rem;
     line-height: 1;
-    margin-bottom: var(--spacer-l);
+    margin-bottom: var(--spacer-s);
   }
 
-  h1 span {
-    display: block;
+  h1 + p {
     font-size: 1.5rem;
-    margin-top: var(--spacer-s);
+    font-weight: bold;
+    margin-bottom: var(--spacer-l);
     color: var(--color-foreground);
   }
 
@@ -229,10 +238,14 @@
     fill: var(--color-foreground);
   }
 
+  .icon-links {
+    gap: var(--spacer-s);
+  }
+
   .icon-links a {
     display: flex;
     align-items: center;
-    gap: var(--spacer-m);
+    gap: 0.625em;
     color: var(--color-foreground);
     width: fit-content;
     font-size: 1.125rem;
