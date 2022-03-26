@@ -1,13 +1,11 @@
 <header>
   <nav>
+    <a id="home-link" href="/">
+      <span aria-hidden="true">&lt;</span>
+      Victor&nbsp;Bianchi
+      <span aria-hidden="true">&gt;</span>
+    </a>
     <ul>
-      <li>
-        <a href="/">
-          <span aria-hidden="true">&lt;</span>
-          Victor&nbsp;Bianchi
-          <span aria-hidden="true">&gt;</span>
-        </a>
-      </li>
       <li>
         <a href="/blog">Blog</a>
       </li>
@@ -22,7 +20,9 @@
 </header>
 
 <style>
-  header {
+  nav {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: var(--spacer-xl);
     padding: var(--spacer-m);
     background-color: var(--color-background-alt);
@@ -49,24 +49,26 @@
     color: var(--color-accent-primary);
   }
 
-  li:first-child {
+  #home-link {
     font-family: var(--font-family-monospace);
     text-transform: lowercase;
-    margin-right: auto;
   }
 
   @media screen and (max-width: 512px) {
-    ul {
+    nav {
       flex-direction: column;
-      gap: var(--spacer-l);
+      align-items: center;
+      gap: var(--spacer-m);
+      padding: 0 var(--spacer-m) var(--spacer-m);
     }
 
-    li:first-child {
-      margin-right: unset;
+    ul {
+      width: 100%;
+      justify-content: space-around;
     }
 
     a {
-      padding: 0.75rem;
+      padding: var(--spacer-m);
     }
   }
 </style>
