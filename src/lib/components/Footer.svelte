@@ -39,7 +39,7 @@
     </li>
   </ul>
   <span>
-    <small> © 2022 Victor Bianchi </small>
+    <small>© 2022 Victor Bianchi</small>
   </span>
 </footer>
 
@@ -51,6 +51,10 @@
     padding: var(--spacer-m);
     margin-top: var(--spacer-xl);
     background-color: var(--color-background-alt);
+  }
+
+  footer > *:last-child {
+    text-align: right;
   }
 
   a {

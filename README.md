@@ -14,6 +14,8 @@ Images are stored on [Cloudinary](https://cloudinary.com/) and converted to `web
 
 ## Credits
 
+Home page artwork © 2022 Giulia Bianchi based on a photograph by Raja Ouali
+
 [Code icon](https://www.flaticon.com/free-icons/code) created by Freepik - Flaticon
 
 CSS reset based on [Josh W. Comeau's custom CSS reset](https://www.joshwcomeau.com/css/custom-css-reset/)
