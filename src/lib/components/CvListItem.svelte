@@ -1,7 +1,7 @@
 <script>
   export let title;
   export let heading = '';
-  export let image = '';
+  export let imageUrl = '';
   export let description = '';
   export let startTime = null;
   export let endTime = null;
@@ -22,8 +22,8 @@
 <li>
   <article>
     <header>
-      {#if image}
-        <img src={image} alt="" />
+      {#if imageUrl}
+        <img src={imageUrl} loading="lazy" alt="" />
       {/if}
       <h3>{title}</h3>
       {#if formattedStartTime || formattedEndTime}
