@@ -1,15 +1,5 @@
 <script context="module">
-  import {
-    name,
-    title,
-    about,
-    links,
-    work,
-    education,
-    skills,
-    certifications,
-    languages,
-  } from '$lib/cv/cv.json';
+  import { name, title, about, links, work, education, skills, languages } from '$lib/cv/cv.json';
   export function load() {
     return {
       props: {
@@ -20,7 +10,6 @@
         work,
         education,
         skills,
-        certifications,
         languages,
       },
     };
@@ -160,13 +149,6 @@
         <li>{language}</li>
       {/each}
     </ul>
-  </section>
-{/if}
-
-{#if certifications}
-  <section id="certifications">
-    <h2>{certifications.title}</h2>
-    <p>{certifications.text}</p>
   </section>
 {/if}
 

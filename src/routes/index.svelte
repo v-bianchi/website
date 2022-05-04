@@ -18,8 +18,17 @@
       I can't stop learning new stuff and love to share what I have learned. In this website you can
       find my résumé, my personal projects, and stories about how I created them.
     </p>
+    <p>
+      Right now, I'm studying to obtain the <a
+        href="https://elearnsecurity.com/product/ejpt-certification/"
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+      >
+        eLearnSecurity Junior Penetration Tester certification</a
+      >.
+    </p>
     <p class="artwork-credit">
-      <small> Artwork © 2022 Giulia Bianchi based on a photograph by Raja Ouali </small>
+      <small>Artwork © 2022 Giulia Bianchi based on a photograph by Raja Ouali</small>
     </p>
   </div>
   <div>
