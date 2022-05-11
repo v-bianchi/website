@@ -95,4 +95,10 @@
       width: 3rem;
     }
   }
+
+  @media print {
+    footer {
+      display: none;
+    }
+  }
 </style>

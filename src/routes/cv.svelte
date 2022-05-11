@@ -210,4 +210,29 @@
     border-radius: 999rem;
     font-weight: bold;
   }
+
+  @media print {
+    h1 {
+      font-size: 2rem;
+      color: var(--color-accent-4);
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    h1 + p {
+      font-size: 1.25rem;
+      color: var(--color-accent-4);
+    }
+
+    .icon-links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .pill-list > li {
+      border: 1px solid var(--color-foreground);
+    }
+  }
 </style>

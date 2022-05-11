@@ -71,4 +71,10 @@
       padding: var(--spacer-m);
     }
   }
+
+  @media print {
+    header {
+      display: none;
+    }
+  }
 </style>

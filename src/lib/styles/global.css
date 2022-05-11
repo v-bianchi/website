@@ -128,3 +128,30 @@ code,
 pre {
   font-family: var(--font-family-monospace);
 }
+
+@media print {
+  :root {
+    /* Colours */
+    --color-background: unset;
+    --color-background-alt: unset;
+
+    --color-foreground: #0c0c0c;
+    --color-foreground-faded: #434343;
+
+    /* Spacing */
+    --spacer-s: 0.25rem;
+    --spacer-m: 0.5rem;
+    --spacer-l: 1rem;
+    --spacer-xl: 2rem;
+    --spacer-xxl: 4rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    background: unset;
+    background-clip: unset;
+    -webkit-background-clip: unset;
+    color: var(--color-foreground);
+  }
+}
