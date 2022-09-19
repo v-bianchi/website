@@ -1,5 +1,5 @@
 <script context="module">
-  import { name, title, about, links, work, education, skills, languages } from '$lib/cv/cv.json';
+  import { name, title, about, links, work, education, skills, languages } from '$lib/content/cv.json';
   export function load() {
     return {
       props: {

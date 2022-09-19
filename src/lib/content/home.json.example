@@ -1,0 +1,11 @@
+{
+  "metadata": {
+    "title": "Person McSurname | Software developer",
+    "description": "Welcome to my website"
+  },
+  "heading": "Hello world!",
+  "tagline": "This is Person McSurname's website, feel free to browse",
+  "htmlContent": "<p class=\"something\">Any HTML goes here</p>",
+  "imageUrl": "https://placekitten.com/300/450",
+  "imageCredit": "Image by placekitten.com"
+}
