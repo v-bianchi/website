@@ -15,7 +15,7 @@ jobs:
         uses: actions/setup-node@v3.4.1
 
       - name: Sveltekit build
-        run: pnpm build
+        run: npm run build
         
       - name: Deploy on Netlify
         run: echo "TODO integrate with Netlify"
