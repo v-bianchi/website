@@ -9,11 +9,10 @@ jobs:
 
     steps:
 
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout main repository with app logic
       - uses: actions/checkout@v3
       
-      # Check-out different repository with blog posts and other content
-      - name: Checkout
+      - name: Checkout different repository with blog posts and other content
         uses: actions/checkout@v3
         with:
           repository: ${{ github.actor }}/website-content
@@ -42,10 +41,10 @@ jobs:
       - name: Build Sveltekit app
         run: pnpm build
 
-#       - name: Publish on Netlify
-#         uses: netlify/actions/cli@master
-#         with:
-#           args: deploy --dir=build --prod
-#         env:
-#           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-#           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      - name: Publish on Netlify
+        uses: netlify/actions/cli@master
+        with:
+          args: deploy --dir=build --prod
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
