@@ -16,7 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          repository: v-bianchi/website-content
+          repository: ${{ github.actor }}/website-content
           path: website-content
           ref: master
           token: ${{ secrets.GH_PAT }}
@@ -26,12 +26,11 @@ jobs:
           touch .env
           echo VITE_EXTERNAL_IMAGE_BASE_URL=${{ secrets.VITE_EXTERNAL_IMAGE_BASE_URL }} >> .env
           
-      - name: Debug ls commands
+      - name: Move website content into src folder of Sveltekit app
         run: |
-          echo "ls"
-          ls
-          echo "ls $GITHUB_WORKSPACE"
-          ls $GITHUB_WORKSPACE
+          mv website-content/blog/* src/routes/blog
+          mv website-content/content/*.json src/lib/content
+          rm -rf website-content
 
       - name: Setup PNPM and install dependencies
         uses: pnpm/action-setup@v2.2.2
