@@ -10,6 +10,20 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      
+      # Check-out different repository with blog posts and other content
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          repository: v-bianchi/website-content
+          path: website-content
+          
+      - name: Debug ls commands
+        run: |
+          echo "ls"
+          ls
+          echo "ls $GITHUB_WORKSPACE"
+          ls $GITHUB_WORKSPACE
 
       - name: Setup PNPM and install dependencies
         uses: pnpm/action-setup@v2.2.2
