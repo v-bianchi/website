@@ -14,6 +14,7 @@ jobs:
       - name: Setup PNPM and install dependencies
         uses: pnpm/action-setup@v2.2.2
         with:
+          version: 7.12.2
           run_install: |
             - args: [--frozen-lockfile, --strict-peer-dependencies]
         
