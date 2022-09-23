@@ -8,8 +8,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Setup GH private access token
-        run: git config url."https://${{ secrets.GH_PAT }}@github".insteadOf https://github
 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
@@ -21,6 +19,7 @@ jobs:
           repository: v-bianchi/website-content
           path: website-content
           ref: master
+          token: ${{ secrets.GH_PAT }}
 
       - name: Create .env file
         run: |
@@ -44,10 +43,10 @@ jobs:
       - name: Build Sveltekit app
         run: pnpm build
 
-      - name: Publish on Netlify
-        uses: netlify/actions/cli@master
-        with:
-          args: deploy --dir=build --prod
-        env:
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+#       - name: Publish on Netlify
+#         uses: netlify/actions/cli@master
+#         with:
+#           args: deploy --dir=build --prod
+#         env:
+#           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+#           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
