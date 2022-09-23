@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          repository: ${{ github.actor }}/website-content
+          repository: v-bianchi/website-content
           path: website-content
           ref: master
 
