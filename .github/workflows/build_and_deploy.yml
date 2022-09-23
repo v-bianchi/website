@@ -17,6 +17,14 @@ jobs:
           version: 7.12.2
           run_install: |
             - args: [--frozen-lockfile, --strict-peer-dependencies]
-        
-      - name: Deploy on Netlify
-        run: echo "TODO integrate with Netlify"
+            
+      - name: Build Sveltekit app
+        run: pnpm build
+
+      - name: Publish on Netlify
+        uses: netlify/actions/cli@master
+        with:
+          args: deploy --dir=build --prod
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
