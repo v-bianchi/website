@@ -11,13 +11,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v3.4.1
-
-      - name: Install dependencies and build
-        run: |
-          npm ci
-          npm run build
+      - name: Setup PNPM and install dependencies
+        uses: pnpm/action-setup@v2.2.2
+        with:
+          run_install: |
+            - args: [--frozen-lockfile, --strict-peer-dependencies]
         
       - name: Deploy on Netlify
         run: echo "TODO integrate with Netlify"
