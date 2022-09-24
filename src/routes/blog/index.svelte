@@ -1,12 +1,14 @@
 <script>
   export let sortedPosts;
+  export let home;
+  export let blog;
 </script>
 
 <svelte:head>
-  <title>Victor Bianchi | Software developer | Blog</title>
-  <meta name="description" content="This is my blog!" />
-  <meta property="og:title" content="Blog" />
-  <meta property="og:description" content="This is my blog!" />
+  <title>{blog.title ?? home.title}</title>
+  <meta name="description" content={blog.description ?? home.description} />
+  <meta property="og:title" content={blog.title ?? home.title} />
+  <meta property="og:description" content={blog.description ?? home.description} />
 </svelte:head>
 
 <h1>Blog</h1>

@@ -1,9 +1,10 @@
 <script context="module">
-  import { metadata, heading, tagline, htmlContent, imageUrl, imageCredit } from '$lib/content/home.json';
+  import { home } from '$lib/content/metadata.json';
+  import { heading, tagline, htmlContent, imageUrl, imageCredit } from '$lib/content/home.json';
   export function load() {
     return {
       props: {
-        metadata,
+        home,
         heading,
         tagline,
         htmlContent,
@@ -15,9 +16,9 @@
 </script>
 
 <svelte:head>
-  <title>{metadata.title}</title>
-  <meta name="description" content={metadata.description} />
-  <meta property="og:description" content={metadata.description} />
+  <title>{home.title}</title>
+  <meta name="description" content={home.description} />
+  <meta property="og:description" content={home.description} />
 </svelte:head>
 
 <div class="container">

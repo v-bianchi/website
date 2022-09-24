@@ -1,3 +1,5 @@
+import { home, blog } from '$lib/content/metadata.json';
+
 export const get = async () => {
   const allPostFiles = import.meta.glob('/src/routes/blog/**/!(_)*.md');
   const iterablePostFiles = Object.entries(allPostFiles);
@@ -26,6 +28,6 @@ export const get = async () => {
 
   return {
     status: 200,
-    body: { sortedPosts },
+    body: { sortedPosts, home, blog },
   };
 };

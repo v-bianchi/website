@@ -1,8 +1,20 @@
+<script context="module">
+  import { home, projects } from '$lib/content/metadata.json';
+  export function load() {
+    return {
+      props: {
+        home,
+        projects,
+      },
+    };
+  }
+</script>
+
 <svelte:head>
-  <title>Victor Bianchi | Software developer | Projects</title>
-  <meta name="description" content="These are some of my projects" />
-  <meta property="og:title" content="Projects" />
-  <meta property="og:description" content="These are some of my projects" />
+  <title>{projects.title ?? home.title}</title>
+  <meta name="description" content={projects.description ?? home.description} />
+  <meta property="og:title" content={projects.title ?? home.title} />
+  <meta property="og:description" content={projects.description ?? home.description} />
 </svelte:head>
 
 <h1>Some of my projects</h1>

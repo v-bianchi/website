@@ -1,0 +1,14 @@
+{
+  "home": {
+    "title": "Person McSurname",
+    "description": "Welcome to my website"
+  },
+  "blog": {
+    "title": "Person McSurname | Blog",
+    "description": "This is my blog"
+  },
+  "projects": {
+    "title": "Person McSurname | Projects",
+    "description": "These are a few of my projects"
+  }
+}
