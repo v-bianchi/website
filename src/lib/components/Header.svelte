@@ -12,9 +12,9 @@
       <li>
         <a href="/projects">Projects</a>
       </li>
-      <li>
+      <!-- <li>
         <a href="/cv">Résumé</a>
-      </li>
+      </li> -->
     </ul>
   </nav>
 </header>
