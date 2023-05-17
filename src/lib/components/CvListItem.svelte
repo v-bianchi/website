@@ -10,13 +10,20 @@
 
   const formattingOptions = { month: 'short', year: 'numeric' };
 
-  let formattedEndTime = endTime
-    ? new Date(endTime.split('-')).toLocaleString('en', formattingOptions)
-    : null;
+  let formattedEndTime, formattedStartTime;
 
-  let formattedStartTime = startTime
-    ? new Date(startTime.split('-')).toLocaleString('en', formattingOptions)
-    : null;
+  if (endTime) {
+    const endTimeDate = new Date(endTime);
+    endTimeDate.setDate(endTimeDate.getDate() + 1);
+    formattedEndTime = endTimeDate.toLocaleString('en', formattingOptions);
+  }
+
+  if (startTime) {
+    const startTimeDate = new Date(startTime);
+    startTimeDate.setDate(startTimeDate.getDate() + 1);
+    formattedStartTime = startTimeDate.toLocaleString('en', formattingOptions);
+  }
+
 </script>
 
 <li>
