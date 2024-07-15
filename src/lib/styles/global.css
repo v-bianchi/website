@@ -154,4 +154,8 @@ pre {
     -webkit-background-clip: unset;
     color: var(--color-foreground);
   }
+
+  body {
+    line-height: unset;
+  }
 }

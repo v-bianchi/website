@@ -179,6 +179,7 @@
 
   h2 {
     margin: var(--spacer-xl) 0 var(--spacer-l);
+    break-after: avoid; /* avoid page breaks just after this element on print */
   }
 
   ul {
@@ -244,10 +245,6 @@
 
     .pill-list > li {
       border: 1px solid var(--color-foreground);
-    }
-
-    .pagebreak {
-      page-break-after: always;
     }
   }
 </style>

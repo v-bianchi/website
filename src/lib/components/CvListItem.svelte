@@ -62,6 +62,10 @@
 </li>
 
 <style>
+  article {
+    break-inside: avoid; /* avoid splitting element between two pages on print */
+  }
+
   h3 {
     font-size: 1.5rem;
     line-height: 1.2;
