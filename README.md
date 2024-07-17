@@ -8,13 +8,15 @@ I am using [SvelteKit](https://kit.svelte.dev/) as a static website generator an
 
 ### External services
 
-The website's content (blog posts, project info) is stored on a separate repository.
+My own content (blog posts, project info, CV) is stored on separate repositories.
 
 Images are stored on [Cloudinary](https://cloudinary.com/) and converted to `webp` format at different dimensions for optimized image delivery.
 
 ## Credits
 
 Home page artwork © 2022 Giulia Bianchi based on a photograph by Raja Ouali
+
+Boilerplate code relies heavily on [Josh Collinsworth's sveltekit-blog-starter repo](https://github.com/josh-collinsworth/sveltekit-blog-starter)
 
 [Code icon](https://www.flaticon.com/free-icons/code) created by Freepik - Flaticon
 

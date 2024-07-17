@@ -1,10 +1,14 @@
+<script>
+  import { metadata, links } from '$lib/config'
+</script>
+
 <footer>
-  <a href="https://github.com/v-bianchi/website">
+  <a href={metadata.sourceCode}>
     <small>source code</small>
   </a>
   <ul>
     <li>
-      <a href="https://github.com/v-bianchi" target="_blank" rel="noopener noreferrer nofollow">
+      <a href={links.github.url} target="_blank" rel="noopener noreferrer nofollow">
         <svg role="img" width="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <title>GitHub</title>
           <path
@@ -14,7 +18,7 @@
       </a>
     </li>
     <li>
-      <a href="mailto:hello@victorbianchi.dev" target="_blank" rel="noopener noreferrer nofollow">
+      <a href={links.email.url} target="_blank" rel="noopener noreferrer nofollow">
         <svg role="img" width="40" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
           <title>Email</title>
           <path
@@ -25,7 +29,7 @@
     </li>
     <li>
       <a
-        href="https://www.linkedin.com/in/vbianchi/"
+        href={links.linkedin.url}
         target="_blank"
         rel="noopener noreferrer nofollow"
       >
@@ -39,7 +43,7 @@
     </li>
   </ul>
   <span>
-    <small>© 2022 Victor Bianchi</small>
+    <small>© {new Date().getFullYear()} {metadata.author}</small>
   </span>
 </footer>
 

@@ -1,3 +1,7 @@
+<script>
+  import { navItems } from "$lib/config"
+</script>
+
 <header>
   <nav>
     <a id="home-link" href="/">
@@ -6,15 +10,11 @@
       <span aria-hidden="true">&gt;</span>
     </a>
     <ul>
-      <li>
-        <a href="/blog">Blog</a>
-      </li>
-      <li>
-        <a href="/projects">Projects</a>
-      </li>
-      <li>
-        <a href="/cv">Résumé</a>
-      </li>
+      {#each navItems as page}
+        <li>
+          <a href={page.route}>{page.title}</a>
+        </li>
+      {/each}
     </ul>
   </nav>
 </header>

@@ -1,0 +1,116 @@
+export const metadata = {
+  title: 'metadata.title',
+  description: 'metadata.description',
+  URL: 'metadata.url',
+  link: 'metadata.link',
+  author: 'metadata.author',
+  sourceCode: 'metadata.sourceCode',
+}
+
+export const homepage = {
+  heading: 'homepage.heading',
+  tagline: 'homepage.tagline',
+  htmlContent: '<p>homepage.htmlContent</p>',
+  imageUrl: 'https://placehold.co/255x340',
+  imageCredit: 'homepage.imageCredit',
+}
+
+export const links = {
+  website: {
+    url: 'links.website.url',
+    title: 'links.website.title',
+    label: 'links.website.label',
+  },
+  github: {
+    url: 'links.github.url',
+    title: 'links.github.title',
+    label: 'links.github.label',
+  },
+  email: {
+    url: 'links.email.url',
+    title: 'links.email.title',
+    label: 'links.email.label',
+  },
+  linkedin: {
+    url: 'links.linkedin.url',
+    title: 'links.linkedin.title',
+    label: 'links.linkedin.label',
+  },
+}
+
+export const CV = {
+  name: 'CV.name',
+  title: 'CV.title',
+  links,
+  about: {
+    title: 'CV.about.title',
+    htmlContent: '<p>CV.about.htmlContent</p>',
+  },
+  work: {
+    title: 'CV.work.title',
+    items: [
+      {
+        heading: 'CV.work.items[0].heading',
+        title: 'CV.work.items[0].title',
+        startTime: '1999-10',
+        endTime: '2010-05',
+        description: 'CV.work.items[0].description',
+        bottomText: 'CV.work.items[0].bottomText',
+        linkUrl: 'CV.work.items[0].linkUrl',
+        imageUrl: 'https://placehold.co/100',
+      },
+    ],
+  },
+  skills: {
+    title: 'CV.skills.title',
+    items: [
+      {
+        categoryName: 'CV.skills.items[0].categoryName',
+        items: [
+          'Lorem',
+          'Ipsum',
+          'Dolor',
+          'Sit',
+          'Amet',
+        ],
+      },
+    ],
+  },
+  education: {
+    title: 'CV.education.title',
+    items: [
+      {
+        heading: 'CV.education.items[0].heading',
+        title: 'CV.education.items[0].title',
+        startTime: '2001-01',
+        endTime: '2005-01',
+        description: 'CV.education.items[0].description',
+        linkUrl: 'CV.education.items[0].linkUrl',
+        imageUrl: 'https://placehold.co/100',
+      },
+    ],
+  },
+  languages: {
+    title: 'CV.languages.title',
+    items: ['Lorem', 'Ipsum', 'Dolor'],
+  },
+}
+
+// Controls how many posts are shown per page on the main blog index pages
+export const postsPerPage = 10
+
+// Edit this to alter the main nav menu. (Also used by the footer and mobile nav.)
+export const navItems = [
+  {
+    title: 'Blog',
+    route: '/blog',
+  },
+  {
+    title: 'Projects',
+    route: '/projects',
+  },
+  {
+    title: 'CV',
+    route: '/cv',
+  },
+]

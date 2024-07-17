@@ -3,8 +3,7 @@ node_modules
 /build
 /.svelte-kit
 /package
-.env
-.env.*
-!.env.example
-/src/routes/blog/*/
-/src/lib/content/*.json
+
+# Website content - fill in with your own!
+src/lib/config.js
+src/lib/posts

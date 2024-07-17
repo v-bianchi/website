@@ -1,10 +1,10 @@
 <script>
-  import Image from '$lib/components/Image.svelte';
+  import Image from '$lib/components/Image.svelte'
 
-  export let filename;
-  export let alt = '';
-  export let caption;
-  export let credit = '';
+  export let filename
+  export let alt = ''
+  export let caption
+  export let credit = ''
 </script>
 
 <figure>

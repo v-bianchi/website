@@ -1,27 +1,27 @@
 <script>
-  export let title;
-  export let heading = '';
-  export let imageUrl = '';
-  export let description = '';
-  export let startTime = null;
-  export let endTime = null;
-  export let bottomText = '';
-  export let linkUrl = '';
+  export let title
+  export let heading = ''
+  export let imageUrl = ''
+  export let description = ''
+  export let startTime = null
+  export let endTime = null
+  export let bottomText = ''
+  export let linkUrl = ''
 
-  const formattingOptions = { month: 'short', year: 'numeric' };
+  const formattingOptions = { month: 'short', year: 'numeric' }
 
-  let formattedEndTime, formattedStartTime;
+  let formattedEndTime, formattedStartTime
 
   if (endTime) {
-    const endTimeDate = new Date(endTime);
-    endTimeDate.setDate(endTimeDate.getDate() + 1);
-    formattedEndTime = endTimeDate.toLocaleString('en', formattingOptions);
+    const endTimeDate = new Date(endTime)
+    endTimeDate.setDate(endTimeDate.getDate() + 1)
+    formattedEndTime = endTimeDate.toLocaleString('en', formattingOptions)
   }
 
   if (startTime) {
-    const startTimeDate = new Date(startTime);
-    startTimeDate.setDate(startTimeDate.getDate() + 1);
-    formattedStartTime = startTimeDate.toLocaleString('en', formattingOptions);
+    const startTimeDate = new Date(startTime)
+    startTimeDate.setDate(startTimeDate.getDate() + 1)
+    formattedStartTime = startTimeDate.toLocaleString('en', formattingOptions)
   }
 
 </script>
