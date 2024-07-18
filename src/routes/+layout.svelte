@@ -3,7 +3,7 @@
 	import { onMount } from 'svelte'
 
 	import { preloadCode } from '$app/navigation'
-	import { navItems, metadata } from '$lib/config'
+	import { navItems, metadata } from '$lib/content/config'
 
 	import Header from '$lib/components/Header.svelte'
 	import Footer from '$lib/components/Footer.svelte'

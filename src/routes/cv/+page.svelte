@@ -1,5 +1,5 @@
 <script>
-  import { metadata, CV } from '$lib/config'
+  import { metadata, CV } from '$lib/content/config'
   import CvListItem from '$lib/components/CvListItem.svelte'
 
   const {

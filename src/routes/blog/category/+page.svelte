@@ -1,5 +1,5 @@
 <script>
-  import { metadata } from '$lib/config.js'
+  import { metadata } from '$lib/content/config.js'
 
 	export let data
   const { uniqueCategories } = data

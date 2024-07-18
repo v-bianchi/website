@@ -3,7 +3,3 @@ node_modules
 /build
 /.svelte-kit
 /package
-
-# Website content - fill in with your own!
-src/lib/config.js
-src/lib/posts

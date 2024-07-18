@@ -1,3 +1,5 @@
+// Create a src/lib/content folder and move this file there!
+
 export const metadata = {
   title: 'metadata.title',
   description: 'metadata.description',

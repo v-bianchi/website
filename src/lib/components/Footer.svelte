@@ -1,5 +1,5 @@
 <script>
-  import { metadata, links } from '$lib/config'
+  import { metadata, links } from '$lib/content/config'
 </script>
 
 <footer>

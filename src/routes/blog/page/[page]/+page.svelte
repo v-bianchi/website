@@ -2,7 +2,7 @@
 <script>
 	import PostsList from '$lib/components/PostsList.svelte'
 	import Pagination from '$lib/components/Pagination.svelte'
-  import { postsPerPage, metadata } from '$lib/config'
+  import { postsPerPage, metadata } from '$lib/content/config'
 
 	export let data
 	const { page, totalPosts, posts } = data

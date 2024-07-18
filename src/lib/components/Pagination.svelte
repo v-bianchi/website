@@ -1,5 +1,5 @@
 <script>
-	import { postsPerPage } from '$lib/config'
+	import { postsPerPage } from '$lib/content/config'
 
 	export let currentPage
 	export let totalPosts

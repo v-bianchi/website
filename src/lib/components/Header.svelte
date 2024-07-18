@@ -1,5 +1,5 @@
 <script>
-  import { navItems } from "$lib/config"
+  import { navItems } from "$lib/content/config"
 </script>
 
 <header>

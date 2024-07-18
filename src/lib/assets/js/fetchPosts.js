@@ -1,4 +1,4 @@
-import { postsPerPage } from '$lib/config'
+import { postsPerPage } from '$lib/content/config'
 
 const fetchPosts = async ({
   offset = 0,
@@ -6,7 +6,7 @@ const fetchPosts = async ({
   category = '',
 } = {}) => {
   const posts = await Promise.all(
-    Object.entries(import.meta.glob('/src/lib/posts/*.md')).map(
+    Object.entries(import.meta.glob('/src/lib/content/posts/*.md')).map(
       async ([path, resolver]) => {
         const { metadata } = await resolver()
         const slug = path.split('/').pop().slice(0, -3)

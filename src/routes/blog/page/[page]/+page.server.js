@@ -1,4 +1,4 @@
-import { postsPerPage } from '$lib/config'
+import { postsPerPage } from '$lib/content/config'
 import fetchPosts from '$lib/assets/js/fetchPosts'
 import { redirect } from '@sveltejs/kit'
 

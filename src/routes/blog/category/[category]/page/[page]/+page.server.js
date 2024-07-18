@@ -1,5 +1,5 @@
 import { redirect } from '@sveltejs/kit'
-import { postsPerPage } from '$lib/config'
+import { postsPerPage } from '$lib/content/config'
 import fetchPosts from '$lib/assets/js/fetchPosts'
 
 export const load = async ({ url, params, fetch }) => {

@@ -1,10 +1,10 @@
-import { metadata } from '$lib/config'
+import { metadata } from '$lib/content/config'
 
 export const prerender = true
 
 export const GET = async () => {
   const data = await Promise.all(
-    Object.entries(import.meta.glob('$lib/posts/*.md')).map(
+    Object.entries(import.meta.glob('$lib/content/posts/*.md')).map(
       async ([path, page]) => {
         const { metadata } = await page()
         const slug = path.split('/').pop().split('.').shift()

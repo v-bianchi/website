@@ -1,5 +1,5 @@
 <script>
-  import { metadata } from '$lib/config'
+  import { metadata } from '$lib/content/config'
 </script>
 
 <svelte:head>

@@ -1,5 +1,5 @@
 <script>
-	import { homepage } from '$lib/config'
+	import { homepage } from '$lib/content/config'
 </script>
 
 <div class="container">
